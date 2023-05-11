@@ -8,18 +8,25 @@
   <title>Colmar Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+ <link rel="stylesheet" href="reset.css"> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+
 </head>
 
 <body>
   <!-- Header -->
   <header>
 
-    <div class="content">
-      <img class="div-logo" src="mobile-images/ic-logo.svg">
-      <a href="index.html" class="desktop logo"><strong>COLMAR</strong>ACADEMY</a>
+      <div class="logo-side">
 
-      <nav class="desktop">
+       
+        <img class="div-logo" src="mobile-images/ic-logo.svg" alt="A lion logo">
+        <a href="#" class="desktop logo"><strong>COLMAR</strong>ACADEMY</a>
+     
+
+      <nav class="navbar desktop">
         <ul>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online or companies</a></li>
@@ -30,22 +37,22 @@
       <!-- MOBILE -->
       <nav class="mobile">
         <ul>
-          <li class="logos-m"><a href="#"><img src="mobile-images/ic-logo.svg"></a></li>
-          <li class="logos-m"><a href="#"><img src="mobile-images/ic-on-campus.svg"></a></li>
-          <li class="logos-m"><a href="#"><img src="mobile-images/ic-online.svg"></a></li>
-          <li class="logos-m"><a href="#"><img src="mobile-images/ic-login.svg"></a></li>
+          <li class="logos-m"><a href="#"><img src="mobile-images/ic-logo.svg" alt="A lion logo"></a></li>
+          <li class="logos-m"><a href="#"><img src="mobile-images/ic-on-campus.svg" alt="A chair logo"></a></li>
+          <li class="logos-m"><a href="#"><img src="mobile-images/ic-online.svg" alt="A computer logo"></a></li>
+          <li class="logos-m"><a href="#"><img src="mobile-images/ic-login.svg" alt="A profile login"></a></li>
         </ul>
       </nav>
-
     </div>
+ 
   </header>
 
   <!-- First section -->
   <div class="main-content">
-    <div class="first-section">
+    <div class="first-section" >
 
       <div class="image-container">
-        <img src="images\banner.jpg">
+        <img src="images\banner.jpg" alt="Students">
       </div>
 
       <div class="container-right">
@@ -53,9 +60,11 @@
         <div class="right-content">
           <h1><strong>Learn something new everyday</strong></h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <div class="button-container">
-            <div class="button"><a href="#">Start here</a></div>
-          </div>
+          
+          
+          <button class="btn btn-secondary" type="button" style="font-size: 20px;">Start here</button>
+          
+
         </div>
       </div>
 
@@ -67,7 +76,7 @@
     <div class="second-section">
 
       <div class="image-container">
-        <img src="images/information-main.jpg">
+        <img src="images/information-main.jpg" alt="A man reading">
 
         <div class="left-content">
           <h1>It doesn't hurt to keep practicing</h1>
@@ -84,7 +93,7 @@
       <div class="right-section">
 
         <div class="small-container">
-          <img class="small-img" src="images/information-orientation.jpg">
+          <img class="small-img" src="images/information-orientation.jpg" alt="Small image of people walking">
 
           <div class="right-content-2">
             <h2>Orientation date</h2>
@@ -94,7 +103,7 @@
         </div>
 
         <div class="small-container">
-          <img class="small-img" src="images/information-campus.jpg">
+          <img class="small-img" src="images/information-campus.jpg" alt="Campus">
 
           <div class="right-content-2">
             <h2>Our campus</h2>
@@ -104,7 +113,7 @@
         </div>
 
         <div class="small-container">
-          <img class="small-img" src="images/information-guest-lecture.jpg">
+          <img class="small-img" src="images/information-guest-lecture.jpg" alt="Guest for the lecture">
 
           <div class="right-content-2">
             <h2>Our guest lecture</h2>
@@ -119,7 +128,7 @@
         <div class="mobile-2">
 
           <div class="s-container">
-            <img src="mobile-images\information-orientation-mobile.jpg">
+            <img src="mobile-images\information-orientation-mobile.jpg" alt="Small image of people walking">
 
             <div class="right-content-2">
               <h2>Orientation date</h2>
@@ -129,7 +138,7 @@
           </div>
 
           <div class="s-container">
-            <img src="mobile-images\information-campus-mobile.jpg">
+            <img src="mobile-images\information-campus-mobile.jpg" alt="Campus">
 
             <div class="right-content-2">
               <h2>Our campus</h2>
@@ -139,7 +148,7 @@
           </div>
 
           <div class="s-container">
-            <img src="mobile-images\information-guest-lecture-mobile.jpg">
+            <img src="mobile-images\information-guest-lecture-mobile.jpg" alt="Guest for the lecture">
 
             <div class="right-content-2">
               <h2>Special guest lecture</h2>
@@ -165,7 +174,7 @@
         <!-- First row -->
         <div class="row">
           <div class="col">
-            <img src="learning-images\course-software.jpg">
+            <img src="learning-images\course-software.jpg" alt="Computer">
 
             <div class="space-content ">
               <h2>Software engineering</h2>
@@ -175,7 +184,7 @@
           </div>
 
           <div class="col">
-            <img src="learning-images\course-computer-art.jpg">
+            <img src="learning-images\course-computer-art.jpg" alt="Cellphone">
 
             <div class="space-content">
               <h2>Computer art</h2>
@@ -185,7 +194,7 @@
           </div>
 
           <div class="col">
-            <img src="learning-images\course-design.jpg">
+            <img src="learning-images\course-design.jpg" alt="Taking photos">
             <div class="space-content">
               <h2>Design</h2>
               <p class="f-p">COURSES</p>
@@ -197,7 +206,7 @@
         <!-- Second row -->
         <div class="row">
           <div class="col">
-            <img src="learning-images\course-data.jpg">
+            <img src="learning-images\course-data.jpg" alt="Screen data analysis">
             <div class="space-content">
               <h2>Data</h2>
               <p class="f-p">COURSES</p>
@@ -207,7 +216,7 @@
 
 
           <div class="col">
-            <img src="learning-images\course-business.jpg">
+            <img src="learning-images\course-business.jpg" alt="Screen with chess elements">
             <div class="space-content">
               <h2>Business</h2>
               <p class="f-p">COURSES</p>
@@ -216,7 +225,7 @@
           </div>
 
           <div class="col">
-            <img src="learning-images\course-marketing.jpg">
+            <img src="learning-images\course-marketing.jpg" alt="Hands dealing with a smartch-watch">
             <div class="space-content">
               <h2>Marketing</h2>
               <p class="f-p">COURSES</p>
@@ -271,12 +280,13 @@
         <h1>Thesis exhibit</h1>
       </div>
 
-      <div class="fourth-section-content">
-        <div class="video-section">
-          <video controls>
-            <source src="video\thesis.mp4" type="video/mp4">
-          </video>
-
+          <div class="fourth-section-content">
+            <div class="video-section">
+              <video controls>
+                <source src="video\thesis.mp4" type="video/mp4">
+                <track kind="captions" src="video\thesis-captions.vtt" label="English" default>
+              </video>
+            
           <div class="f-content">
             <h2>Reimagine urban<h2>
                 <blockquote>"Curabitur vitae libero in ipsum porttitor consequat.
@@ -289,7 +299,7 @@
 
         <div class="r-section">
           <div class="s-container">
-            <img class="small-img" src="thesis-img\thesis-fisma.jpg">
+            <img class="small-img" src="thesis-img\thesis-fisma.jpg" alt="Hands drawing">
 
             <div class="right-content-2">
               <h2>Fisma: Design and Prototype</h2>
@@ -299,7 +309,7 @@
           </div>
 
           <div class="s-container">
-            <img class="small-img" src="thesis-img\thesis-now-and-then.jpg">
+            <img class="small-img" src="thesis-img\thesis-now-and-then.jpg" alt="Building">
 
             <div class="right-content-2">
               <h2>Now and then</h2>
