@@ -12,10 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .image-container {
   overflow: hidden;
 }
@@ -38,49 +34,50 @@ header {
   z-index: 100;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
-  background-color: white;
   height: 64px;
   margin-top: 0;
+  background-color: white;
+  
 }
 
-header .content {
+.logo-side {
   display: flex;
-  align-items: center;
-  padding: 10px 24px;
+  padding: 10px 25px 10px 25px;
 }
 
 header .logo {
   flex: 1;
+  padding: 10px 0px 10px 5px;
 }
 
-header .desktop nav ul {
-  display: flex;
+.desktop {
+  padding: 15px 30px 15px 0;
 }
 
-.desktop nav li {
+.navbar nav li {
   padding-left: 1rem;
 }
 
-.desktop nav a {
-  vertical-align: bottom;
+header a {
+  text-decoration: none;
   line-height: 1.6;
   font-size: 1.125rem;
   color: #4a4a4a;
 }
 
 /* Hovering */
-nav.desktop ul {
+.navbar ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
 }
 
-nav.desktop ul li {
+.navbar ul li {
   padding: 0 10px;
 }
 
-nav.desktop ul li:hover {
+.navbar ul li:hover {
   background-color: #B2B2B2;
 }
 
@@ -91,7 +88,7 @@ header .div-logo {
 
 .logo {
   font-size: 1.25rem;
-  color: rgb(177, 174, 174);
+  color: rgb(78, 75, 75);
   font-family: var(--font-family);
   letter-spacing: 1px;
 }
@@ -101,7 +98,7 @@ header .div-logo {
   color: #4a4a4a;
 }
 
-.desktop li,
+.navbar li,
 .button {
   font-family: var(--font-family);
 }
@@ -201,29 +198,9 @@ header .mobile {
 }
 
 /* BUTTON CONTAINER RIGHT */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 1rem;
-  width: 100%;
-}
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #434242;
-  width: 85%;
-  margin-right: 24px;
-  font-size: 22px;
-  padding: 16px 16px;
-}
-.button-container a {
-  color: white;
-  text-align: center;
-}
-.button:hover {
-  background-color: #B2B2B2;
+
+button {
+  width: 80%;
 }
 
 /*TABLET */
@@ -333,7 +310,7 @@ header .mobile {
   font-size: 21px;
   font-family: var(--font-family);
   font-weight: normal;
-  color: #747272;
+  color: #555353;
   line-height: 1.8rem;
   padding-bottom: 32px;
 }
@@ -341,7 +318,7 @@ header .mobile {
 .left-content cite {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  color: #747272;
+  color: #555353;
 }
 
 /*Second Section  right container */
@@ -386,7 +363,7 @@ header .mobile {
 
 .right-content-2 p {
   margin-bottom: 15px;
-  color: #747272;
+  color: #555353;
   margin-bottom: 8px;
   line-height: 1.5rem;
 }
@@ -399,12 +376,9 @@ header .mobile {
 }
 
 .right-content-2 a {
-  color: #19A7CE;
+  color: #0D546D;
 }
 
-.right-content-2 a:hover {
-  color: green;
-}
 
 .small-container:hover {
   background-color: #dfdcdc;
@@ -533,21 +507,13 @@ header .mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 32px;
+  margin: 35px;
   padding-bottom: 32px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 72px 0 72px;
-}
 
 .col {
-  flex: 1;
-  margin-right: 32px;
-  margin-bottom: 32px;
+  margin: 0 32px 32px 0;
   background-color: white;
 }
 
@@ -579,14 +545,14 @@ header .mobile {
 .f-p {
   font-family: var(--font-family);
   font-size: 20px;
-  color: #747272;
+  color: #555353;
   margin-bottom: 8px;
 }
 
 .space-content p {
   font-family: var(--font-family);
-  font-size: 19px;
-  color: #747272;
+  font-size: 18px;
+  color: #555353;
   line-height: 1.5rem;
 }
 
@@ -760,7 +726,7 @@ header .mobile {
   font-size: 18px;
   font-family: var(--font-family);
   font-weight: normal;
-  color: #747272;
+  color: #555353;
   line-height: 1.8rem;
   padding-bottom: 32px;
 }
@@ -855,11 +821,11 @@ footer ul li {
   font-size: 16px;
   font-family: var(--font-family);
   padding-left: 1rem;
-  color: #4a4a4a;
+  color: #555353;
 }
 
 footer li a {
-  color: #4a4a4a;
+  color: #555353;
 }
 
 @media only screen and (max-width: 600px) {
